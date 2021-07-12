@@ -1,0 +1,637 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width , initial-scale=1" />
+<title>Contact Us</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<script src="jquery-3.4.1.slim"></script>
+<link rel="icon" type="image/png" href="Images/Icon.png" />
+<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+<script src="bootstrap-3.3.7-dist/js/jquery-3.1.1.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+
+	html,body {
+  height:100%;
+    
+}
+.pb-100 {
+	padding-bottom: 100px;
+}
+.pt-100 {
+	padding-top: 100px;
+}
+.section-title {
+	margin-bottom: 110px;
+	position: relative;
+}
+.section-title h3 {
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 30px;
+}
+
+.section-title:before {
+	position: absolute;
+	content: "";
+	width: 110px;
+	height: 1px;
+	background-color: #635CDB;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%) rotate(90deg);
+	        transform: translate(-50%, -50%) rotate(90deg);
+	top: 50%;
+}
+.section-title:after {
+	position: absolute;
+	content: "";
+	width: 80px;
+	height: 1px;
+	background-color: #635CDB;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	bottom: -20px;
+}
+.section-title h3 span {
+	display: block;
+	font-size: 15px;
+	text-transform: lowercase;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+.section-title p {
+	margin-top: 5px;
+}
+.team-hover {
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	color: #fff;
+	visibility: hidden;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	-webkit-transition: .5s;
+	transition: .5s
+}
+
+.single-team img {
+	width: 100%;
+}
+
+.team-hover h4 {
+	text-transform: capitalize;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.team-hover h4 span {
+	display: block;
+	font-size: 13px;
+	font-weight: 400;
+	margin-top: 5px;
+}
+
+.team-hover ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-top: 15px;
+}
+
+.team-hover ul li {
+	display: inline-block;
+}
+
+.team-hover ul li {
+	background-color: #333;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	border-radius: 50%;
+	margin: 0 2px;
+	text-align: center
+}
+
+.team-hover ul li a {
+	color: #fff;
+	font-size: 13px;
+	display: block;
+}
+.single-team {
+	position: relative;
+	z-index: 2;
+}
+
+.team-content {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}
+
+.team-hover:before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: #333;
+	z-index: -1;
+	opacity: .85;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+}
+
+.single-team:hover .team-hover {
+	visibility: visible;
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.first {
+  padding-top:140px;
+  height:80vh;
+  min-height:400px;
+  background-size:cover;
+ background-image:url(Images/Contact-us.jpg);
+}
+
+.affix {
+  -webkit-transition:padding 0.2s ease-out;
+  -moz-transition:padding 0.2s ease-out;  
+  -o-transition:padding 0.2s ease-out;         
+  transition:padding 0.2s ease-out;
+
+}
+
+.affix-top {
+  /* navbar style at top */
+  background:transparent;
+  border-color:transparent;
+  padding: 15px;
+  -webkit-transition:all 0.5s ease;
+  -moz-transition:all 0.5s ease; 
+  -o-transition:all 0.5s ease;         
+  transition:all 0.5s ease;  
+}
+
+.affix-top .nav>li>a {
+   color:#000;
+}
+
+.affix-top .navbar-collapse {
+   border-color:transparent;
+   box-shadow:none;
+}
+		
+	#map {
+        height: 500px;
+        width: 50%;
+       }
+  
+       
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color:white;
+  background-color: #222;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.footer
+  {
+    background-color: #222;
+    color: #fff;
+    margin-top: 30px;
+    padding-top: 30px;
+  }
+
+  .bottom-footer
+  {
+    border-top: 1px solid #b2b2b2;
+    margin-top: 10px;
+    padding-top: 10px;
+    color: #b2b2b2;
+  }
+  .footer-nav
+  {	padding-bottom:30px;
+  		margin-bottom:20px;
+	   text-align: right;
+   		list-style: none;
+  }
+
+ .footer-nav li
+  {
+    display: inline;
+   
+  }
+  
+  .footer li:not(:first-child):before
+  {
+    content: '|';
+     padding: 0px 10px;
+  }
+  
+ 
+
+.pic1:hover{
+	-webkit-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        transform: scale(1.4);
+		
+		}
+		
+		
+.location{
+	
+	color:white;
+	
+	}
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section{
+	padding: 60px 0;
+}
+#anmtxt { background-color: #111111; }
+#anmtxt {
+  padding: 40px;
+  font-size: 75px;
+  font-family: 'Monoton', cursive;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+  color: red;
+}
+#anmtxt > div > p { margin:0; }
+#error:hover { text-shadow: 0 0 200px #ffffff,0 0 80px #008000,0 0 6px #0000ff; }
+#code:hover { text-shadow: 0 0 100px red,0 0 40px FireBrick,0 0 8px DarkRed; }
+#error {
+  color: #fff;
+  text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+}
+#error span {
+  animation: upper 11s linear infinite;
+}
+#code span:nth-of-type(2) {
+  animation: lower 10s linear infinite;
+}
+#code span:nth-of-type(1) {
+  text-shadow: none;
+  opacity:.4;
+}
+@keyframes upper {
+  0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+    opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+  }
+  20%,21.999%,63%,63.999%,65%,69.999% {
+    opacity:0.4; text-shadow: none; 
+  }
+}
+@keyframes lower {
+  0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+    opacity:0.99; text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+  }
+  19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% { 
+    opacity:0.4; text-shadow: none; 
+  }
+}
+section .section-title{
+	text-align:center;
+	color:#007b5e;
+	margin-bottom:50px;
+	text-transform:uppercase;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+  <div class="navbar navbar-inverse navbar-fixed-top" data-spy="affix" data-offset-top="400">
+  <div class="container">
+    <div class="navbar-header">
+    
+      <a href="Contact Us.html" class="navbar-brand" style="font-size:40px;">Contact Us</a>
+       <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+        </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="Home.html">Home</a></li>
+        
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Collection<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="Luxury Collection.html">Luxury Collection</a></li>
+          <li class="divider"></li>
+          
+          <li><a href="winter collection.html">Winter Collection</a></li>
+          <li class="divider"></li>
+          
+          <li><a href="Summer Collection.html">Summer Collection</a></li>
+          <li class="divider"></li>
+          
+          <li><a href="Unstitches collection.html">Unstitched Collection</a></li>
+        </ul>
+        
+         <!--Designer Dropdown-->
+        
+         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Designers Collection<span class="caret"></span></a>
+       
+        <ul class="dropdown-menu">
+          <li><a href="Hassan Sheharyar Yasin (HSY).html">Hassan Sheharyar Yasin (HSY)</a></li>
+          <li class="divider"></li>
+          
+          <li><a href="Deepak Parwani.html">Deepak Parwani</a></li>
+          <li class="divider"></li>
+          
+          <li><a href="Maria B.html">Maria.B</a></li>
+          <li class="divider"></li>
+          
+           <li><a href="Nomi Ansari.html">Nomi Ansari</a></li>
+           <li class="divider"></li>
+          
+           <li><a href="Asim Jofa.html">Asim Jofa</a></li>
+        </ul>
+        
+        	<!--Designer Dropdown-->
+ 
+ 
+        <li><a href="About Us.html">About Us</a></li>
+      </ul>
+		
+    </div>
+    </div>		
+  </div>
+</div>
+<section class="first">
+  <div class="container"> 
+  </div>
+</section>
+<br /><br />
+
+<br />
+<br />     
+       <!--Nav Bar-->
+         
+<div id="anmtxt">
+  <p id="error">Thank <span>you f</span>or <span>Visi</span>t</p>
+  <p id="code">Ma<span>da</span>m <span>Bouti</span>que</p>
+</div>       
+
+<!------ Include the above in your HEAD tag ---------->
+
+
+   <section class="team-area pb-100 pt-100" id="team">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="single-team">
+                     <img src="1.png" alt="">
+                     <div class="team-hover">
+                        <div class="team-content">
+                           <h4>Daniyal Khan<span>Web Designer</span></h4>
+                           <ul>
+                              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="single-team">
+                     <img src="2.jpg" alt="">
+                     <div class="team-hover">
+                        <div class="team-content">
+                           <h4>Shahrooz Ghouri<span>Web Developer</span></h4>
+                           <ul>
+                              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="single-team">
+                     <img src="Husnain.jpg" alt="">
+                     <div class="team-hover">
+                        <div class="team-content">
+                           <h4>M.Husnain<span>Web Developer</span></h4>
+                           <ul>
+                              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+
+       <!--Map-->
+       
+       
+       				<center>
+       				<h3>Our Address</h3>
+                    </center>
+                    <br />
+<br />
+
+       <div class="row">
+       
+       		<div class="col-md-6 col-lg-6" align="center">
+      		  <div id="map"></div>
+       		</div>
+       
+       <div class="col-md-6 col-lg-6">
+       		<h2><img src="Images/loc.png" width="30px" height="30px" />&nbsp;Karachi, Pk</h2>
+            <h2><span class="glyphicon glyphicon-phone"></span>&nbsp;+92-316-2728322</h2>
+            <h2><span class="glyphicon glyphicon-phone"></span>&nbsp;+92-336-1111111</h2>   
+            <h2><span class="glyphicon glyphicon-phone"></span>&nbsp;+92-323-1222222</h2>
+	<br />
+
+    <form class="form-inline">
+    <div class="form-group">
+      <label for="email"></label>
+      <input type="email" class="form-control"  placeholder="Enter Email" name="Email" required="required">
+    </div>
+
+    <div class="form-group">
+      <label for="name"></label>
+      <input type="text" class="form-control"  placeholder="Your Name" name="Name" pattern="(a+z)(A+Z)" required="required">
+      
+    </div>
+    <br />
+   <br />
+
+                        <div class="form-group">
+                            <label for="name">
+                               </label>
+                            <textarea name="message"  class="form-control" rows="8" cols="50" required="required"
+                                placeholder="Message"></textarea>
+                        </div>
+                 <br />
+<br />
+
+                 
+                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs" onclick="myFunction()">
+                            Send Message</button>
+                    </div>
+              
+                </form>
+       </div>
+       
+       </div>
+
+         <!--Map-->
+    
+ 
+</div>
+</div>
+
+
+
+	<!--Footer-->
+    
+ <footer class="footer">
+
+    <div class="container">
+
+      <div class="row">
+
+         <div class="col-md-12">
+          <h4>Contact Address</h4>
+           <address>
+            <a href="https://www.google.com/maps/place/Aptech+Computer+Education+North+Nazimabad+Center/@24.9273208,67.0330662,15z/data=!4m5!3m4!1s0x0:0x93d609e8bec9a880!8m2!3d24.9273208!4d67.0330662" class="location"> Aptech North Nazimabad
+            </a><br>
+             Karachi<br>
+             Pakistan<br>
+           </address>
+         </div>
+        </div> 
+	
+        <div class="bottom-footer">
+          
+        
+        		<div class="row">
+       		<div class="col-md-12">
+            <ul class="footer-nav">
+            
+           <center>   <li><a href="https://www.facebook.com/MadamBoutiqueOfficial/"><img src="Images/FB.png" class="pic1" width="30px"
+              height="30px"/></a></li>
+              
+              <li><a href="https://www.instagram.com/madam.boutique/?hl=en"><img src="Images/intsa.png" class="pic1" width="30px"
+              height="30px" /></a></li>
+              
+              <li><a href="https://twitter.com/"><img src="Images/twitter.png" class="pic1" width="30px"
+              height="30px" /></a></li>
+              
+              
+              <li><a href="https://www.snapchat.com/"><img src="Images/snapchat-logo-1.png" class="pic1" width="40px"
+              height="40px" /></a></li>
+              
+                
+              <li><a href="https://www.pinterest.com/"><img src="Images/pinterest.png" class="pic1" width="30px"
+              height="30px" /></a></li></center>
+              
+            </ul>
+            </div>
+             </div>
+            
+            
+           <center> <div class="row">
+            <div class="col-md-12"><h5> &copy;copyright H.M.H 2017 </h5></div>
+        </div></center>
+    
+    </div>
+  
+  </footer>
+  
+  <!--Footer-->
+
+
+
+<script>
+
+function myFunction() {
+	
+
+	alert("Thankyou For Your Kind Message :)");	
+}
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+function initMap() {
+        var loc = {lat: 24.934, lng: 67.040};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: loc
+        });
+        var marker = new google.maps.Marker({
+          position: loc,
+		  animation:google.maps.Animation.BOUNCE,
+          map: map
+        });
+      }
+	  
+	  
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAg272BuCY-f0VDYyrc9O_1OYHXjDThoSQ
+&callback=initMap">
+    </script>
+
+</body>
+</html>
